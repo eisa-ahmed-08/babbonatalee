@@ -1,0 +1,76 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Portiere Virtuale</title>
+
+
+  <style>
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h2>Portiere Virtuale</h2>
+
+
+  <input type="text" id="nome" placeholder="Inserisci il nome"><br>
+
+
+  <select id="genere">
+    <option value="">Seleziona genere</option>
+    <option value="uomo">Uomo</option>
+    <option value="donna">Donna</option>
+  </select><br><br>
+
+
+  <button onclick="saluta()">Saluta</button>
+
+
+  <h3 id="messaggio"></h3>
+
+
+  <script>
+    function saluta() {
+      let nome = document.getElementById("nome").value;
+      let genere = document.getElementById("genere").value;
+      let inputNome = document.getElementById("nome");
+      let messaggio = document.getElementById("messaggio");
+
+
+      // Reset bordo
+      inputNome.style.border = "2px solid black";
+
+
+      if (nome === "") {
+        messaggio.textContent = "Inserisci il nome";
+        inputNome.style.border = "2px solid red";
+      }
+      else if (genere === "uomo") {
+        messaggio.textContent = "Benvenuto " + nome + " negro di merda";
+        inputNome.style.border = "2px solid blue";
+      }
+      else if (genere === "donna") {
+        messaggio.textContent = "Benvenuta " + nome + " negro di merda";
+        inputNome.style.border = "2px solid pink";
+      }
+      else {
+        messaggio.textContent = "Seleziona il genere.";
+      }
+    }
+  </script>
+
+
+</body>
+</html>
+
+
+
