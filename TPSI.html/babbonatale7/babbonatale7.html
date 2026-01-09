@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Somma Scontrino</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  #totale {
+    margin-top: 20px;
+  }
+  .superato {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h2>Calcolo Scontrino</h2>
+<label for="prezzi">Inserisci i prezzi separati da virgola:</label>
+<input type="text" id="prezzi" placeholder="es: 10,20,5">
+<button onclick="calcolaSomma()">Calcola</button>
+
+<h3 id="totale">Totale: 0 €</h3>
+<div id="messaggio"></div>
+<script src="script7.js"></script>
+</body>
+</html>

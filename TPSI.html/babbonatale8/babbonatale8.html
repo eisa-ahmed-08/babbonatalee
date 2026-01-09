@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Filtro Numeri Pari</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  #contenitore {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .pallino {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h2>Numeri Pari</h2>
+<input type="text" id="numeri" placeholder="es: 1,2,3,4,5,6">
+<button onclick="filtraPari()">Filtra Pari</button>
+
+<div id="contenitore"></div>
+<script src="script8.js"></script>
+</body>
+</html>
