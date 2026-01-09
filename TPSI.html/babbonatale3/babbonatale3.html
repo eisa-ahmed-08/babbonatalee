@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <h1 id="count">0</h1>
-
-<button onclick="meno()">-</button>
-<button onclick="piu()">+</button>
-
-
-<script src="script3.js"></script>
+<meta charset="UTF-8">
+<title>Analizzatore Vocali</title>
+<style>
+  #risultato {
+    display: none;
+    margin-top: 10px;
+  }
+</style>
 </head>
 <body>
-    
+
+<textarea id="testo" placeholder="Scrivi un testo..."></textarea><br><br>
+<button onclick="contaVocali()">Analizza</button>
+
+<div id="risultato"></div>
+
 </body>
 </html>
